@@ -24,7 +24,7 @@ def yts():
                     "msg":"berhasil",
                     "video-sound": {
                                     "144p":res[0].url+"&title="+name,
-                                    "360p":res[1].url+"&title="+name
+                                    "360p":res[1].url+"&title="
                                     }
                             }
             else:
@@ -34,7 +34,7 @@ def yts():
                     "msg":"berhasil",
                     "video-sound":{
                         "114p":res[0].url+"&title="+name,
-                        "360p":res[1].url+"&title="+name,
+                        "360p":res[1].url+"&title=",
                         "720p":res[2].url+"&title="+name
                     }
                 }
@@ -104,7 +104,7 @@ def youtubevidnos():
                 "msg":"Berhasil",
                 "audio-only":{
                     "m4A":res[3].url+name,
-                    "mp3":res[4].url+name
+                    "mp3":res[4].url
                 }
             }
         else:
@@ -115,7 +115,7 @@ def youtubevidnos():
                 "audio-only":{
                     "m4A":res[2].url,
                     "m4B":res[3].url+name,
-                    "mp3":res[4].url+name
+                    "mp3":res[4].url
                 }
             }
     except Exception as e:
